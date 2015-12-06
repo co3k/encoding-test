@@ -33,6 +33,7 @@ header('Content-Type: text/html; charset='.$encoding);
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $h($encoding) ?>" />
+<!-- 現在の文字エンコーディングにかかわらず HTML コメントは常に UTF-8 として出力する -->
 <title><?php echo $h($encoding) ?> <?php echo $h('表示サンプル') ?></title>
 <meta name="description" content="<?php echo $h(implode(' / ', $text)) ?>" />
 </head>
