@@ -24,7 +24,7 @@ $iana_php_encoding_map = [
 
 $php_encoding = $iana_php_encoding_map[$encoding];
 $h = function ($str) use ($php_encoding) {
-    return htmlspecialchars(mb_convert_encoding($str, $php_encoding), ENT_QUOTES | ENT_XHTML | ENT_DISALLOWED, $php_encoding);
+    return htmlspecialchars(mb_convert_encoding($str, $php_encoding, 'utf-8'), ENT_QUOTES | ENT_XHTML | ENT_DISALLOWED, $php_encoding);
 };
 
 header('Content-Type: text/html; charset='.$encoding);
