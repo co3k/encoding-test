@@ -35,7 +35,7 @@ header('Content-Type: text/html; charset='.$encoding);
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $h($encoding) ?>" />
 <!-- 現在の文字エンコーディングにかかわらず HTML コメントは常に UTF-8 として出力する -->
 <title><?php echo $h($encoding) ?> <?php echo $h('表示サンプル') ?></title>
-<meta name="description" content="<?php echo $h(implode(' / ', $text)) ?>" />
+<meta name="description" content="<?php echo $h(implode(' / ', $text)) ?> / 現在の文字エンコーディングにかかわらず description 末尾は常に UTF-8 として出力する" />
 </head>
 <body>
 <?php foreach ($text as $p): ?>
